@@ -78,7 +78,7 @@ sudo rpi-eeprom-update
     > **Note:** If you receive the error `no eeprom bin file found for version nnnn-nn-nn` when changing the boot order in `raspi-config`, access the *Advanced Options > Bootloader Version* option and choose either of the default options to update the EEPROM version to latest, and then reboot. You should be able to change the boot order on next startup.
     
     ```
-    shutdown -h now
+    sudo shutdown -h now
     ``` 
     4. Once the RPI has shut down, remove the SD card and insert the USB flash drive containing our Ubuntu image.
 
