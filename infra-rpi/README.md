@@ -30,6 +30,9 @@ Aside from physical hardware, you'll need to prepare a USB and SD card with an o
     - _Enable SSH_ is selected;
     - _Allow public-key authentication only_ is selected (feel free to transfer any public keys into the _authorized keys_ section - note that only one key can be accepted at present!);
     - _Set username and password_ is selected with a specific username and password;
+  
+      > **Note:** Do not user the username `admin` else the `cloud-init` file will fail to load user data when you first boot the RPI.
+
     - _Configure wifi_ is selected with the correct SSID and password, and;
     - _Eject media when finished_ is deselected - this will enable these settings to be written to the image.
 Also, ensure that the sudo/admin password you use to bypass User Access Control prompts is correct - the RPI Imager will initially work if this is wrong, but will fail when writing _config.txt_ with the advanced settings you've set above.
