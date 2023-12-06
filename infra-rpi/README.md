@@ -73,6 +73,7 @@ sudo rpi-eeprom-update
     2. Select *Advanced Options > Boot Order* and select *USB Boot*.
     3. Commit changes and power down the RPI.
     > **Note:** It's important that the internal power-off process completes gracefully, so that the updates from the configuration manager can be applied.
+    > **Note:** If you receive the error `no eeprom bin file found for version nnnn-nn-nn` when changing the boot order in `raspi-config`, access the *Advanced Options > Bootloader Version* option and choose either of the default options to update the EEPROM version to latest, and then reboot. You should be able to change the boot order on next startup.
     ```
     shutdown -h now
     ``` 
